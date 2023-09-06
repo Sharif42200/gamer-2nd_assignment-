@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+header{
+    padding: 0 100px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+main{
+    padding: 0 100px;
+}
+/* nav section */
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icon > img{
+    height: 40px;
+    width: 80px;
+}
+.icon-title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.G{
+    color: #FF42A5;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+
+}
+.list > ul li{
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.follow-content{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px;
+}
+.follow-content a{
+    padding: 5px;
+}
+
+/*  */
+/* banner section */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.banner-details{
+    /* border: 1px solid red; */
+    padding: 100px 0;
+    /* text-align: center; */
+}
+.banner-title{
+    color: #0B0223;
+    /* text-align: center; */
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.banner-goat{
+    /* text-align: center; */
+    font-size: 80px;
+    font-weight: 800;
+    color: #FF42A5;
+    margin: 0;
+}
+.banner-list ul{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    /* padding-left: 130px; */
+}
+.button{
+    text-align: left;
+    /* padding-left: 130px; */
+}
+.btn_primary{
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px 30px;
+    background-color: #FF42A5;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+/*  */
+/* media query */
+/* for nav section */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .list > ul{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+/* for banner section */
+@media screen and (max-width: 576px) {
+    .banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    main{
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
