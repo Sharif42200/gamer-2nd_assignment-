@@ -110,6 +110,148 @@ main{
     width: 100%;
 }
 
+/* online game section */
+.games-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.online-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.funny{
+    color: #FF42A5;
+}
+.online-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.option-3{
+    /* border: 1px solid red; */
+    background-color: gray;
+    text-align: center;
+    margin-top: -270px;
+}
+.play-now{
+    color: #534C64;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.games-description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+.games{
+    width: 100%;
+}
+
+/* instant play section */
+.instantly-play{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.instant{
+    padding-top: 100px;
+    text-align: center;
+}
+.instant-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 200px;
+}
+.instant-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.play-color{
+    color: #FF42A5;
+}
+.instant-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+.big-img{
+    width: 100%;
+}
+.img-rectangle{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: -250px;
+    margin-left: -100px;
+}
+
+/* mini games section */
+.mini-row{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.mini-games{
+    display: flex;
+    gap: 5px;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.mini-games:hover{
+    border: 1px solid rebeccapurple;
+
+}
+.mini-games-img{
+    width: 30px;
+    height: 30px;
+}
+.mini-games-name{
+    color: #0B0223;
+    font-size: 10px;
+    font-weight: 600;
+}
+.mini-games-name:hover{
+    color: #FF42A5;
+    font-size: medium;
+}
+/* footer */
+footer{
+    margin-top: 100px;
+    background-color: #0B0223;
+}
+.footer{
+    padding: 50px 200px;
+}
+.amer{
+    color: #FFF;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-row > img{
+    height: 40px;
+    width: 80px;
+}
+.footer-title{
+    font-size: 45px;
+    font-weight: 700;
+}
 
 
 /*  */
@@ -144,5 +286,56 @@ main{
 @media screen and (min-width: 576px) and (max-width: 992px){
     .banner{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* for online games scetion */
+@media screen and (max-width: 576px) {
+    .games-row{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .games-row{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* instant play section */
+@media screen and (max-width: 576px) {
+    .instant-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+    }
+    .instant-title{
+        text-align: center;
+    }
+    .instant-description{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .instant-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+    }
+    .instant-title{
+        text-align: center;
+    }
+    .instant-description{
+        text-align: center;
+    }
+    
+}
+
+/* mini games section */
+@media screen and (max-width: 576px) {
+    .mini-row{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .mini-row{
+        grid-template-columns: repeat(3,1fr);
     }
 }
