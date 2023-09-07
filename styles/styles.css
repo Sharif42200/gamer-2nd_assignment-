@@ -169,7 +169,7 @@ main{
     color: white;
     font-size: 24px;
   }
-  .option-5:hover .play-button , .overlay {
+  .option-5:hover .play-button{
     opacity: 1;
     background-color: #FF42A5;
   }
@@ -464,7 +464,7 @@ footer{
     }
 }
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .mini-row{
+    .footer-details{
         grid-template-columns: repeat(3,1fr);
     }
 }
