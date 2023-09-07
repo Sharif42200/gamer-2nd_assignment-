@@ -148,6 +148,32 @@ main{
     font-size: 20px;
     font-weight: 600;
 } */
+.option-5 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .play-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%; 
+    padding: 10px; 
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .play-button i {
+    color: white;
+    font-size: 24px;
+  }
+  .option-5:hover .play-button , .overlay {
+    opacity: 1;
+    background-color: #FF42A5;
+  }
+    
 .games-description{
     color: #534C64;
     font-size: 20px;
